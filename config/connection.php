@@ -2,10 +2,10 @@
 
 function connection()
 {
-    $host = "localhost";
+    $host = "127.0.0.1";
     $user = "root";
     $pass = "";
-    $db = "online_shop";
+    $db = "simple_ecommerce";
 
     // Create connection
     $connection = new mysqli($host, $user, $pass, $db);

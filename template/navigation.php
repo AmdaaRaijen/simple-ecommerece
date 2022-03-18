@@ -7,7 +7,7 @@ $nav_search = (isset($_GET['q'])) ? $_GET['q'] : "";
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="assets/img/logo.png" alt="Logo" height="45">
+            <img src="assets/img/amdaxapparel3.png" alt="Logo" height="50">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">

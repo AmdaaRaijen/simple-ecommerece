@@ -19,10 +19,17 @@ if ($product['data'] === null) {
     header('Location: index.php');
 }
 
+
+
 $categories = categoriesFindById($product['data']['categories_id']);
 $path = 'products-' . $categories['data']['id'];
-$cart = cartFindByUserAndProducts($_SESSION['id'], $product['data']['id']);
-$existing_qty = ($cart['data'] == null ? 1 : $cart['data']['qty']);
+
+
+if (isset($_SESSION['id'])) {
+    $cart = cartFindByUserAndProducts($_SESSION['id'], $product['data']['id']);
+    $existing_qty = ($cart['data'] == null ? 1 : $cart['data']['qty']);
+    
+}
 
 if (isset($_POST['submit'])) {
     if (!isset($_SESSION['login']) || $_SESSION['login'] == '') {

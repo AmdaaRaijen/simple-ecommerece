@@ -54,7 +54,7 @@ $path = 'index';
             <?php $products = productsGetByCategories($category['id'], 3); ?>
 
             <div class="d-flex flex-row justify-content-between border-bottom pt-4">
-                <h3 class="pb-2"><?php echo $category['category'] ?></h3>
+                <h3 class="pb-2"><?php echo "Product" ?></h3>
                 <h6 class="align-self-center"><a href="products.php?c=<?php echo $category['id'] ?>">See All</a></h6>
             </div>
 
@@ -62,7 +62,7 @@ $path = 'index';
                 <?php foreach ($products['data'] as $j => $product) : ?>
                     <div class="col-12 col-lg-4">
                         <div class="card">
-                            <img src="<?php echo $product['image'] ?>" class="card-img-top img-100">
+                                <img src="<?php echo $product['image'] ?>" class="card-img-top img-100">
                             <div class="card-body">
                                 <h5 class="card-title text-center"><?php echo $product['name'] ?></h5>
                                 <p class="card-text text-center"><?php echo substr($product['description'], 0, 150) ?></p>
